@@ -42,11 +42,11 @@ export const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <FlatList
-        refreshControl={<RefreshControl  refreshing={isLoading} onRefresh={fetchData} />}
+        refreshControl={<RefreshControl refreshing={isLoading} onRefresh={fetchData} />}
         data={items}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => navigation.navigate('FullPost', { id: item.id, title: item.title })}>
-            <Post title={item.title} 
+            <Post title={item.title}
               imageUrl={item.imageUrl}
               createdAt={item.createdAt}
             />

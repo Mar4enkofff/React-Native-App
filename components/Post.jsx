@@ -9,14 +9,14 @@ const PostView = styled.View`
 `;
 
 const PostImage = styled.Image`
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 125px;
   border-radius: 12px;
   margin-right: 12px
 `;
 
 const PostTitle = styled.Text`
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 700;
 `;
 

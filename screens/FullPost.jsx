@@ -35,14 +35,13 @@ export const FullPostScreen = ({ route, navigation }) => {
 
     )
   }
-  
+
   return (
     <View styles={styles.container}>
-        <Image
-        style={styles.image} source={{ uri: data.imageUrl }}/>
+      <Image style={styles.image} source={{ uri: data.imageUrl }}/>
       <Text style={styles.text}>
         {data.text}
-            </Text>
+      </Text>
     </View>
   )
 }
@@ -54,13 +53,14 @@ const styles = StyleSheet.create({
   },
   image: {
     borderRadius: 10,
-    width: '100%',
-    height: 1500,
-    marginBottom: 20,
+    width: 360,
+    height: 260,
+    marginBottom: 15,
+    objectFit: 'contain'
   },
   text: {
     padding: 10,
-    fontSize: 38,
-    lineHeight: 44,
+    fontSize: 18,
+    lineHeight: 25,
   },
 });
